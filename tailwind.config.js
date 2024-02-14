@@ -1,0 +1,53 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        blue_gray: {
+          50: "#f1f1f1",
+          400: "#868686",
+          900: "#343434",
+          "900_01": "#263147",
+        },
+        red: {
+          300: "#ef6f6c",
+          500: "#ff3131",
+          "300_01": "#ff7373",
+          A700_16: "#ff000016",
+        },
+        amber: { A100: "#ffde6c" },
+        teal: { 300: "#5baabb" },
+        green: { A700: "#00e316" },
+        black: { 900: "#000000" },
+        gray: {
+          100: "#f6f6f6",
+          200: "#ebebeb",
+          400: "#bfbfbf",
+          500: "#979797",
+          600: "#7d7d7d",
+          700: "#6a6a6a",
+          800: "#444444",
+          900: "#1f1f1f",
+          "600_02": "#727272",
+          "600_01": "#787878",
+          "600_03": "#7e7e7e",
+          "100_01": "#f2f2f2",
+          "700_02": "#686868",
+          "700_01": "#666666",
+        },
+        blue: { 900: "#0014ce" },
+        cyan: { 600: "#00a8cb", 800: "#007e99", "800_0c": "#007e990c" },
+        indigo: { 900: "#022859", "900_01": "#102886" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: { sfcompactdisplay: "SF Compact Display" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
